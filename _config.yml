@@ -6,6 +6,8 @@
 # feature for the data you need to update frequently.
 
 # Main Page Setup
+url: "https://jesusestrada0216.github.io"
+baseurl: "/Portfolio"
 
 title: Jesus Estrada | Aerospace Portfolio
 
