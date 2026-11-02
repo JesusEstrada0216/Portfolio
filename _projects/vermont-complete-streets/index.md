@@ -10,6 +10,7 @@ skills:
   - Research and Presentation
 main-image: /main.jpg
 ---
+{% include image-gallery.html images="team-photo.jpg, corridor-render.jpg, street-section.jpg" height="280" %}
 
 ## Project
 As a Student Intern Team Leader, I helped guide a multidisciplinary team developing a Complete Streets proposal for Los Angeles's Vermont Avenue corridor.
