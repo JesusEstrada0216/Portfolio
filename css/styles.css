@@ -946,4 +946,211 @@ footer p {
 
       
 }
+/* Aerospace visual polish */
+html,
+body {
+    overflow-x: hidden;
+}
 
+body {
+    padding: 0 clamp(16px, 4vw, 52px);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 76px;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-color);
+    background: rgba(8, 21, 33, 0.94);
+    backdrop-filter: blur(14px);
+}
+
+nav .left a {
+    font-size: 22px;
+    letter-spacing: -0.03em;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav .right a {
+    margin-left: 0;
+    font-size: 15px;
+}
+
+nav .right a:last-child {
+    padding: 8px 18px;
+    border: 1px solid var(--link-color);
+    border-radius: 999px;
+}
+
+nav a,
+.hero-section .text .links a,
+.project-card,
+.arrow a,
+.contact-section button {
+    transition: all 0.2s ease;
+}
+
+.hero-section {
+    margin: 30px 0 16px;
+    padding: clamp(24px, 5vw, 64px);
+    border: 1px solid var(--border-color);
+    border-image: none;
+    border-radius: 24px;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(97, 216, 229, 0.14), transparent 32%),
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        var(--light-background-color);
+    background-size: auto, 36px 36px, 36px 36px, auto;
+}
+
+.hero-section .group {
+    gap: clamp(24px, 5vw, 72px);
+}
+
+.hero-section .text h2 {
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.hero-section .text p {
+    line-height: 1.7;
+}
+
+.hero-section .headshot img {
+    width: min(340px, 32vw);
+    border: 3px solid rgba(97, 216, 229, 0.45);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .text .links a,
+.arrow a {
+    border-radius: 999px;
+}
+
+.hero-section .text .links a:hover,
+nav .right a:last-child:hover,
+.arrow a:hover {
+    transform: translateY(-2px);
+}
+
+.arrow {
+    margin: 24px 0 64px;
+}
+
+.project-grid-section .grid-container {
+    gap: 24px;
+}
+
+.project-grid-section .grid-container .project-link .project-card {
+    height: 100%;
+    min-height: 0;
+    padding: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 18px;
+    background: var(--light-background-color);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-grid-section .grid-container .project-link:hover .project-card {
+    transform: translateY(-4px);
+    border-color: var(--link-color);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.28);
+}
+
+.project-card img {
+    aspect-ratio: 16 / 9;
+    border-radius: 12px;
+}
+
+.project-card .project-skills .skill,
+.skills-section .skill-categories .skill,
+.post-view .summary .skill {
+    border: 1px solid var(--border-color);
+}
+
+.skills-section .skill-categories .skills-card {
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    background: var(--light-background-color);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+}
+
+.contact-section {
+    border: 1px solid var(--border-color);
+    background: var(--light-background-color);
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.contact-section .group form button {
+    border-radius: 8px;
+}
+
+.post-view {
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    background: var(--light-background-color);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.2);
+}
+
+.post-view .summary img,
+.post-view .content .image-gallery img {
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+footer {
+    border-top: 1px solid var(--border-color);
+    background: var(--light-background-color);
+}
+
+:focus-visible {
+    outline: 3px solid var(--link-color);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 18px;
+    }
+
+    nav {
+        height: 68px;
+    }
+
+    .hero-section {
+        margin: 20px 0 12px;
+        padding: 24px 18px;
+    }
+
+    .hero-section .headshot img {
+        width: min(275px, 72vw);
+    }
+
+    .project-grid-section .grid-container .project-link .project-card {
+        min-height: 0;
+    }
+
+    .post-view .summary {
+        padding: 18px 14px;
+    }
+
+    .post-view .content {
+        padding: 0 14px 20px;
+    }
+}
