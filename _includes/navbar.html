@@ -1,7 +1,7 @@
 <!-- _includes/nav.html -->
 <nav>
     <div class="left">
-        <a href="/">{{site.name}}</a>
+        <a href="{{ '/' | relative_url }}"
     </div>
 
     <!-- Desktop Menu -->
@@ -9,7 +9,7 @@
         <a href="/">
             <span>Home</span>
         </a>
-        <a href="/projects/">
+        <a href="{{ '/projects/' | relative_url }}"
             <span>Projects</span>
         </a>
         <a href="{{site.resume-url}}" target="_blank" rel="noopener noreferrer">
