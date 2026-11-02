@@ -33,7 +33,7 @@ resume-url: https://drive.google.com/drive/folders/1HiZjn6ZP_scWpR2Kx2TM0FOojvU9
 # Set up external links - this will show up as small icons next to your name.
 
 external-links:    # input only your own url slug. The icons with missing entries will not appear.
-  linkedin: jesus-estrada-5071892b7/    # https://www.linkedin.com/in/{your url slug} 
+  linkedin: jesus-estrada-5071892b7    # https://www.linkedin.com/in/{your url slug} 
   github: JesusEstrada0216    # https://github.com/{your url slug} 
   stackoverflow:       # https://stackoverflow.com/users/{your url slug}
   medium:            # https://medium.com/@{your url slug} 
