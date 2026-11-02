@@ -9,7 +9,7 @@ skills:
   - Engineering Judgment
 main-image: /main.jpg
 ---
-
+{% include image-gallery.html images="housing-shell.jpg, electronics-package.jpg" height="280" %}
 ## Project
 Our team needed a sheet metal housing to package and protect its high voltage electronics. When the original designer shifted to other priorities, I took initiative to carry the enclosure through design and fabrication.
 
