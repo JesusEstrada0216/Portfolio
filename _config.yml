@@ -51,7 +51,7 @@ skills:
     - Solidworks
     - Fusion 360 (Autodesk)
     - Inventor (Autodesk)
-  -category: Engineering Tools
+  - category: Engineering Tools
     tools:
       - MATLAB
       - Excel
