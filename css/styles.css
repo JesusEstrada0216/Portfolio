@@ -1223,3 +1223,6 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+.about-highlights strong {
+    color: #f1f5f9 !important;
+}
